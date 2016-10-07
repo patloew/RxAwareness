@@ -32,13 +32,21 @@ You can also obtain a `Single<GoogleApiClient>`, which connects on subscribe and
 
 The following Exceptions are thrown in the lib and provided via `onError()`:
 
-* `StatusException`: When the call to the Awareness API was not successful or timed out
+* `StatusException`: When the call to the Awareness API was not successful or timed out.
 * `GoogleAPIConnectionException`: When connecting to the GoogleAPIClient was not successful.
 * `GoogleAPIConnectionSuspendedException`: When the GoogleApiClient connection was suspended.
 
 # Sample
 
-A basic sample app is available in the `sample` project. You need to create an API Key for the sample app, see the [guide in the Awareness API docs](https://developers.google.com/awareness/android-api/get-a-keyy).
+A basic sample app is available in the `sample` project. You need to create an API Key for the sample app, see the [guide in the Awareness API docs](https://developers.google.com/awareness/android-api/get-a-key).
+
+# Setup
+
+The library is available on jCenter. Add the following to your `build.gradle`:
+
+	dependencies {
+	    compile 'com.patloew.rxawareness:rxawareness:1.0.0'
+	}
 
 # Testing
 
